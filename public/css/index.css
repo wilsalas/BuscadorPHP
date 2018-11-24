@@ -1,0 +1,260 @@
+body {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("../img/home.jpg");
+}
+
+label[for=selecTipo], label[for=selectCiudad] {
+  margin-left: 5%;
+}
+
+.contenedor {
+  background-color: rgba(242, 242, 242, 0.5);
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 700px;
+  height: auto;
+  align-content: flex-start;
+}
+
+.rowTitulo {
+  width: 100%;
+  text-align: center;
+  background-color: #648C7D;
+  color: #F2F2F2;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 130px;
+}
+
+.colFiltros {
+  width: 25%;
+  height: 100%;
+  min-height: 570px;
+}
+
+.filtrosContenido, .colContenido, .colFiltros form {
+  min-height: 570px;
+}
+
+.filtrosContenido {
+  width: 100%;
+  margin: 0 0;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.tituloFiltros {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.tituloFiltros h5 {
+  font-size: 1.3rem;
+}
+
+.filtroCiudad {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.filtroCiudad .select-wrapper {
+  margin: 25px auto;
+  width: 90%;
+}
+
+.filtroTipo {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.filtroTipo .select-wrapper {
+  margin: 5px auto;
+  width: 90%;
+}
+
+.filtroPrecio {
+  margin: 15px auto;
+  width: 90%;
+  height: 100px;
+}
+
+.filtroPrecio label {
+  font-size: 1rem;
+}
+
+.botonField {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+}
+
+.botonField input {
+  color: #648C7D;
+}
+
+.colContenido {
+  width: 75%;
+  display: block;
+  flex-flow: row wrap;
+  align-content: space-between;
+  padding: 20px;
+}
+
+.tituloContenido {
+  width: 100%;
+  min-height: 170px;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 5px;
+}
+
+.tituloContenido h5 {
+  width: 100%;
+  margin: 0.5rem 5px;
+  margin-bottom: 2rem;
+  height: 10px;
+  font-size: 2rem;
+}
+
+.tituloContenido button {
+  background: #648C7D;
+  color: #F2F2F2;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.divider {
+  width: 100%;
+}
+
+#dataHtml {
+  overflow-y: scroll;
+  height: 22em;
+}
+
+.itemMostrado {
+  width: 100%;
+  margin-top: 0.4rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.itemMostrado img {
+  width: 35% !important;
+}
+
+.precioTexto {
+  font-size: 1.3rem;
+  color: #ffab40;
+}
+
+.card-stacked {
+  width: 65%;
+}
+
+.card-action {
+  text-align: right;
+}
+
+/* Ion.RangeSlider, Flat UI Skin
+// css version 2.0.3
+// © Denis Ineshin, 2014    https://github.com/IonDen
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+.irs-line-mid, .irs-line-left, .irs-line-right, .irs-bar, .irs-bar-edge, .irs-slider {
+  background: url(../img/sprite-skin-flat.png) repeat-x;
+}
+
+.irs-bar {
+  height: 12px;
+  top: 25px;
+  background-position: 0 -60px;
+}
+
+.irs-bar-edge {
+  top: 25px;
+  height: 12px;
+  width: 9px;
+  background-position: 0 -90px;
+}
+
+.irs-shadow {
+  height: 3px;
+  top: 34px;
+  background: rgb(3, 158, 55);
+  opacity: 0.25;
+}
+
+.lt-ie9 .irs-shadow {
+  filter: alpha(opacity=25);
+}
+
+.irs-slider {
+  width: 16px;
+  height: 18px;
+  top: 22px;
+  background-position: 0 -120px;
+}
+
+.irs-slider.state_hover, .irs-slider:hover {
+  background-position: 0 -150px;
+}
+
+.irs-min, .irs-max {
+  color: #999;
+  font-size: 10px;
+  line-height: 1.333;
+  text-shadow: none;
+  top: 0;
+  padding: 1px 3px;
+  background: #e1e4e9;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.irs-from, .irs-to, .irs-single {
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.333;
+  text-shadow: none;
+  padding: 1px 5px;
+  background: #ed5565;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.irs-from:after, .irs-to:after, .irs-single:after {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: -6px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -3px;
+  overflow: hidden;
+  border: 3px solid transparent;
+  border-top-color: #ed5565;
+}
+
+.irs-grid-pol {
+  background: #e1e4e9;
+}
+
+.irs-grid-text {
+  color: #999;
+}
